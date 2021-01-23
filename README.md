@@ -1,2 +1,2 @@
-# main-site
-My main personal website
+# Main Site
+My main personal website using Flask
