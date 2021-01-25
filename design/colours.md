@@ -14,3 +14,4 @@ transparency
 | 16dp | 15% |
 | 24dp | 16% |
 
+* Light Logo: #f7ffffb3

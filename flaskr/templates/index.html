@@ -4,5 +4,20 @@
 {% endblock %}
 
 {% block content %}
+    <div class="indexContent">
+        <div class="centerLogoContainer">
+            <iframe class="centerLogo" src="{{ url_for('static', filename='logos/logolight[whitetext]/logo.html') }}" scrolling="no"></iframe>
 
+        </div>
+
+        <div class="socialLinkContainer">
+            <a href="mailto:blog+lukebriggs02@gmail.com" class="socialLink"><img src="/static/social/mail.svg" alt="mail"></a>
+            <a href="https://twitter.com/_lukebriggs" class="socialLink"><img src="/static/social/twitter.svg" alt="twitter"></a>
+            <a href="https://github.com/CodeLuke/" class="socialLink"><img src="/static/social/github.svg" alt="github"></a>
+        </div>
+
+        <div class="indexFooter">
+            <p>© 2021 - Luke Briggs</p>
+        </div>
+    </div>
 {% endblock %}

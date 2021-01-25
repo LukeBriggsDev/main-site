@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %} - Luke Briggs</title>
     <link rel = "stylesheet" href = "{{ url_for('static', filename='style.css') }}">
+    <link rel= "icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
     <nav>
-        <h1>Luke Briggs</h1>
+        <a href="{{ url_for('index') }}"><h1>Codelab |</h1></a>
+        <div class="pageLinks">
+            <a href="{{ url_for('index') }}">About</a>
+            <a href="{{ url_for('blog.blog') }}">Blog</a>
+            <a href="{{ url_for('index') }}">Projects</a>
+
+        </div>
         <url>
             {% if g.user %}
-                <li><span>{{ g.user['username'] }}</span></li>
+                <li>{{ g.user['username'] }} (Logged in)</li>
+                <li><a href="{{ url_for('auth.logout') }}">Log Out</a></li>
             {% endif %}
         </url>
+
     </nav>
     <section>
         <header>
