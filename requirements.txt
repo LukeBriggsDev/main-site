@@ -1,2 +1,4 @@
 flask
 click
+mistune
+pygments

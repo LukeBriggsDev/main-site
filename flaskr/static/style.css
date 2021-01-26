@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+*:focus{
+  outline: none;
+}
 
 html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue",
@@ -45,10 +48,14 @@ nav h1{
   margin-left: 16px;
 }
 
-nav url{
+.adminLinks{
   list-style: none;
   float: right;
-  margin-right: 8px;
+  margin-right: 16px;
+}
+.adminLinks a{
+  color: rgba(255, 255, 255, 0.50);
+  margin-left: 16px;
 }
 
 
@@ -98,4 +105,148 @@ nav url{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+article{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  padding-top: 16px;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-bottom: 32px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0);
+  width: 800px
+}
+article img{
+  width: 800px;
+}
+h1{
+  font-size: 111px;
+  letter-spacing: -1.5px;
+  font-weight: 300;
+  color: #f7ffffb3;
+}
+h2{
+  font-size: 69px;
+  letter-spacing: -0.5px;
+  font-weight: 300;
+  color: #f7ffffb3;
+}
+h3{
+  font-size: 55px;
+  letter-spacing: 0px;
+  font-weight: 300;
+  line-height: 70px;
+  color: #f7ffffb3;
+}
+h4{
+  font-size: 39px;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+  color: #f7ffffb3;
+  margin-bottom: 0.3rem;
+}
+h5{
+  font-size: 28px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  color: #f7ffffb3;
+}
+h6{
+  font-size: 23px;
+  letter-spacing: 0.15px;
+  font-weight: 400;
+  color: #f7ffffb3;
+}
+hr{
+  border: 0;
+  height: 2px;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+}
+p{
+  font-size: 17pt;
+  max-width: 800px;
+  font-weight: 300;
+  color: #f7ffffb3;
+  margin-bottom: 1em;
+}
+article a{
+  text-decoration: underline;
+}
+article a:hover{
+  text-decoration: none;
+}
+
+blockquote{
+  border-left-color: rgba(255, 255, 255, 0.4);
+  border-left-width: 4px;
+  border-left-style: solid;
+  margin-left: 16px;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 1px;
+  background-color: rgba(255, 255, 255, 0.03);
+}
+blockquote p{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+ol li{
+  font-size: 17pt;
+  max-width: 800px;
+  font-weight: 300;
+  color: #f7ffffb3;
+  margin-bottom: 1em;
+}
+
+pre{
+  font-family: monospace;
+  font-size: 15pt;
+  max-width: 800px;
+  font-weight: 100;
+  margin-bottom: 32px;
+  background-color: #121212;
+}
+
+.blogInputTitle{
+  font-size: 55px;
+  letter-spacing: 0px;
+  font-weight: 300;
+  line-height: 100px;
+  color: #f7ffffb3;
+  background: none;
+  border: none;
+}
+
+textarea{
+  width: 100%;
+  min-height: 1.5rem;
+  resize: none;
+  border: none;
+  color: #f7ffffb3;
+  background: none;
+  font-size: 17pt;
+  max-width: 800px;
+  font-weight: 300;
+  margin-bottom: 1em;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+input[type="submit"]{
+  font-size: 17pt;
+  max-width: 800px;
+  font-weight: 300;
+  color: #f7ffffb3;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+}
+input[type="submit"]:hover{
+  color: #a7a7ffb3;
+
 }

@@ -3,6 +3,8 @@ from flask import(
 )
 from werkzeug.exceptions import abort
 
+import mistune
+from . import highlighter
 from flaskr.auth import login_required
 from flaskr.db import get_db
 
@@ -17,19 +19,22 @@ def blog():
         ' FROM post p JOIN user u ON p.author_id = u.id'
         ' ORDER BY created DESC'
     ).fetchall()
-    return render_template('blog/index.html', posts=posts)
+    return render_template('blog/index.html', posts=posts, mistune=mistune, highlighter=highlighter)
 
 
 @bp.route('/create', methods=('GET', 'POST'))
 @login_required
 def create():
     if request.method == 'POST':
-        title = request.form['title']
-        body = request.form['body']
+        title = request.form.get('title')
+        body = request.form.get('body')
         error = None
 
         if not title:
             error = 'Title is required'
+
+        if not body:
+            error = 'Body is required'
 
         if error is not None:
             flash(error)
@@ -86,7 +91,7 @@ def update(id):
                 (title, body, id)
             )
             db.commit()
-            return redirect(url_for('blog.index'))
+            return redirect(url_for('index'))
 
     return render_template('blog/update.html', post=post)
 
@@ -98,4 +103,4 @@ def delete(id):
     db = get_db()
     db.execute('DELETE FROM post WHERE id = ?', (id,))
     db.commit()
-    return redirect(url_for('blog.index'))
+    return redirect(url_for('index'))

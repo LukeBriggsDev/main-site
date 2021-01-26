@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+    About
+{% endblock %}
+
+{% block content %}
+    <article>
+        {{ mistune.markdown(
+"###  About
+-----------------
+
+I'm Luke Briggs: a Computer Science student from the UK studying at Newcastle University.
+
+#### About Site
+This is a site where I will share what I think might be helpful to other people in similar
+places in life. Most of the stuff here will be related to side projects, my academic work, and will
+be a reference to which I will point to on occasion.
+
+The full story of how this site was created can be found [here](https://www.google.com) but the short
+story is as follows: It is written by my own fair hand (discounting the numerous, non-remunerated hours that
+more intelligent people spent on the libraries upon which I depend). The back end runs on [flask](https://flask.palletsprojects.com/en/1.1.x/),
+the front end is entirely basic html and css, none of that flexbox/grid/bootstrap shenanigans here. All my blog posts (including this about page)
+are written in markdown and then rendered as html server side using [Mistune](https://mistune.readthedocs.io/en/latest/)
+
+"
+        ) | safe}}
+    </article>
+    <div class="indexFooter">
+        <p>© 2021 - Luke Briggs</p>
+    </div>
+{% endblock %}
