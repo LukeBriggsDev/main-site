@@ -91,7 +91,7 @@ def update(id):
                 (title, body, id)
             )
             db.commit()
-            return redirect(url_for('index'))
+            return redirect(url_for('blog.blog'))
 
     return render_template('blog/update.html', post=post)
 
