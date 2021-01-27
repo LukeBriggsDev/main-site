@@ -22,6 +22,18 @@ def blog():
     return render_template('blog/index.html', posts=posts, mistune=mistune, highlighter=highlighter)
 
 
+@bp.route('/<int:id>')
+def post(id):
+    db = get_db()
+    post = db.execute(
+        'SELECT p.id, title, body, created, author_id, username'
+        ' FROM post p JOIN user u ON p.author_id = u.id'
+        ' WHERE p.id = ?', (id, )
+    ).fetchone()
+
+    return render_template('blog/post.html', post=post, mistune=mistune, highlighter=highlighter)
+
+
 @bp.route('/create', methods=('GET', 'POST'))
 @login_required
 def create():

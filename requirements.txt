@@ -2,3 +2,4 @@ flask
 click
 mistune
 pygments
+waitress
