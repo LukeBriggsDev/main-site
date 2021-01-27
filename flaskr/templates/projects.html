@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}
+    Projects
+{% endblock %}
+
+{% block content %}
+    <article class="projects">
+        {{ mistune.markdown(
+"###  Projects
+-----------------
+
+Here is a list of all the projects that are available on the internet
+
+#### Dice-Jack
+-------------------
+##### *Release Date: 23rd September 2019*
+
+Made in 2 days as a mini-project for a course. Used as a way to get to grips with windows forms and learn some Visual
+Basic .NET. Just so happens to also be the first game of mine with a computer controlled player.
+
+![Dice Jack](/static/projects/dicejack.gif)
+
+[Source Code](https://github.com/CodeLuke/Dice-Jack)
+
+#### Ping!
+-------------------
+##### *Release Date: 23rd June 2018*
+
+A remake of the classic Pong game. This was the first game I programed in Unity and as a result is pretty simple and
+isn’t very fleshed out but a vital learning experience in how to make a video-game as well as the the nuances and
+functions of the Unity Editor.
+
+![Ping](/static/projects/ping.gif)
+
+[GameJolt Link](https://gamejolt.com/games/Ping/348543)
+
+#### Fallen Stars
+------------------------
+##### *Release Date: 16th April 2017*
+
+This was my first attempt at a video-game and was done well before any other projects. It was made in Construct 2 so no
+actual programming was involved but it was the first time I had designed a game from scratch and was a vital learning
+experience. It was also a game I did very little of the art for and relied heavily on [opengameart.org](https://www.opengameart.org) which is a great
+source of assets for those who are more focused on programming than art.
+
+The game itself is an asteroids clone with a cartoon atmosphere and explosion animations that I was far too proud of at
+the time. It even has a (barely) working high score system.
+
+![Fallen Stars](/static/projects/fallenstars.gif)
+
+[GameJolt Link](https://gamejolt.com/games/falling-stars/250066)
+"
+        ) | safe}}
+    </article>
+{% endblock %}

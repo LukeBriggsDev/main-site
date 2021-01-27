@@ -124,6 +124,10 @@ article img{
   margin-left: auto;
   margin-right: auto;
 }
+.projects img{
+  margin-left: unset;
+  margin-right: unset;
+}
 h1{
   font-size: 111px;
   letter-spacing: -1.5px;

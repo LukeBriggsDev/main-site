@@ -27,6 +27,9 @@ def create_app(test_config=None):
     from . import about
     app.register_blueprint(about.bp)
 
+    from . import projects
+    app.register_blueprint(projects.bp)
+
     from . import index
     app.register_blueprint(index.bp)
 
