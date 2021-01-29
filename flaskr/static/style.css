@@ -83,6 +83,8 @@ nav h1{
   -webkit-transform: scale(0.5);
   -webkit-transform-origin: 0 0;
   border: none;
+  margin-right: -711px;
+  margin-left: auto;
 }
 .centerLogoContainer{
   width: calc(711px * 0.5);
@@ -283,12 +285,49 @@ input[type="submit"]:hover{
   article p{
     text-align: justify;
   }
+  article h3{
+    white-space: pre-wrap;       /* css-3 */
+     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+     white-space: pre-wrap;      /* Opera 4-6 */
+     white-space: -o-pre-wrap;    /* Opera 7 */
+     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  }
   pre{
     white-space: pre-wrap;       /* css-3 */
    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
    white-space: pre-wrap;      /* Opera 4-6 */
    white-space: -o-pre-wrap;    /* Opera 7 */
    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  }
+
+}
+
+@media all and (max-width: 400px) {
+  /* Mobile style for logo*/
+  .centerLogo{
+    -ms-zoom: 0.2;
+    -moz-transform: scale(0.3);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.3);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.3);
+    -webkit-transform-origin: 0 0;
+  }
+
+  .centerLogoContainer{
+    width: calc(711px * 0.3);
+    height: calc(400px * 0.3);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13%;
+}
+
+}
+
+@media all and (max-width: 322px) {
+  /* Mobile style for logo*/
+  article p{
+    text-align: left;
   }
 
 }
