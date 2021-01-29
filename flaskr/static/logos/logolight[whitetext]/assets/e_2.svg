@@ -60,16 +60,14 @@
        x="46.506943"
        y="88.080826"
        ry="4.4065886" />
-    <text
-       xml:space="preserve"
-       style="font-size:25.4px;line-height:1.25;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';fill:#ffffff;stroke-width:0.264583"
-       x="54.52298"
-       y="112.78773"
-       id="text172"><tspan
-         sodipodi:role="line"
-         id="tspan170"
-         x="54.52298"
-         y="112.78773"
-         style="font-size:25.4px;fill:#121212;fill-opacity:0.95;stroke-width:0.264583">E</tspan></text>
+    <g
+       aria-label="E"
+       id="text172"
+       style="font-size:25.4px;line-height:1.25;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';fill:#ffffff;stroke-width:0.264583">
+      <path
+         d="M 56.70738,112.78773 V 95.007728 h 11.0998 v 1.9304 h -8.9662 v 5.918202 h 8.2042 v 1.9304 h -8.2042 v 6.0706 h 8.9662 v 1.9304 z"
+         style="font-size:25.4px;fill:#121212;fill-opacity:0.95;stroke-width:0.264583"
+         id="path833" />
+    </g>
   </g>
 </svg>

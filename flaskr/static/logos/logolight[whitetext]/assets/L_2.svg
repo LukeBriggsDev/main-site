@@ -60,16 +60,14 @@
        x="46.506943"
        y="52.097492"
        ry="4.4065886" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;line-height:1.25;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="54.124943"
-       y="76.696259"
-       id="text193"><tspan
-         sodipodi:role="line"
-         id="tspan191"
-         x="54.124943"
-         y="76.696259"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';fill:#121212;fill-opacity:0.95;stroke-width:0.264583">L</tspan></text>
+    <g
+       aria-label="L"
+       id="text193"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;line-height:1.25;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583">
+      <path
+         d="m 56.334743,76.696259 v -17.78 h 2.1336 v 15.8496 h 9.017 v 1.9304 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';fill:#121212;fill-opacity:0.95;stroke-width:0.264583"
+         id="path833" />
+    </g>
   </g>
 </svg>

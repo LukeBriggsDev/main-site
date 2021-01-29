@@ -60,27 +60,23 @@
        x="10.61808"
        y="88.080849"
        ry="4.4065886" />
-    <text
-       xml:space="preserve"
-       style="font-size:25.4px;line-height:1.25;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';fill:#ffffff;stroke-width:0.264583"
-       x="18.898811"
-       y="112.82589"
-       id="text78"><tspan
-         sodipodi:role="line"
-         id="tspan76"
-         x="18.898811"
-         y="112.82589"
-         style="opacity:0.95;fill:#121212;fill-opacity:1;stroke-width:0.264583">;</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';opacity:0.95;fill:#121212;fill-opacity:1;stroke-width:0.264583"
-       x="12.614954"
-       y="99.880211"
-       id="text28"><tspan
-         sodipodi:role="line"
-         id="tspan26"
-         x="12.614954"
-         y="99.880211"
-         style="font-size:16.9333px;fill:#121212;fill-opacity:1;stroke-width:0.264583">:</tspan></text>
+    <g
+       aria-label=";"
+       id="text78"
+       style="font-size:25.4px;line-height:1.25;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';fill:#ffffff;stroke-width:0.264583">
+      <path
+         d="m 26.518811,102.84369 q -0.7874,0 -1.3462,-0.5334 -0.5588,-0.5334 -0.5588,-1.3208 0,-0.762 0.5588,-1.2954 0.5588,-0.5334 1.3462,-0.5334 0.7874,0 1.3462,0.5334 0.5588,0.5334 0.5588,1.2954 0,0.7874 -0.5588,1.3208 -0.5588,0.5334 -1.3462,0.5334 z m -3.4544,13.081 2.2352,-6.8326 h 2.8194 l -3.0226,6.8326 z"
+         style="opacity:0.95;fill:#121212;fill-opacity:1;stroke-width:0.264583"
+         id="path835" />
+    </g>
+    <g
+       aria-label=":"
+       id="text28"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';opacity:0.95;fill:#121212;fill-opacity:1;stroke-width:0.264583">
+      <path
+         d="m 13.871722,99.00378 q 0,-0.55397 0.248047,-0.835089 0.256314,-0.289388 0.727602,-0.289388 0.479557,0 0.74414,0.289388 0.272851,0.281119 0.272851,0.835089 0,0.537434 -0.272851,0.826822 -0.272851,0.289388 -0.74414,0.289388 -0.421678,0 -0.702798,-0.256316 -0.272851,-0.264582 -0.272851,-0.859894 z m 0,-7.300832 q 0,-1.116208 0.975649,-1.116208 1.016991,0 1.016991,1.116208 0,0.537434 -0.272851,0.826822 -0.272851,0.289387 -0.74414,0.289387 -0.421678,0 -0.702798,-0.256315 -0.272851,-0.264582 -0.272851,-0.859894 z"
+         style="font-size:16.9333px;fill:#121212;fill-opacity:1;stroke-width:0.264583"
+         id="path838" />
+    </g>
   </g>
 </svg>

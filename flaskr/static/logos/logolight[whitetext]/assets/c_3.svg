@@ -60,16 +60,14 @@
        x="10.61808"
        y="88.080849"
        ry="4.4065886" />
-    <text
-       xml:space="preserve"
-       style="font-size:25.4px;line-height:1.25;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';fill:#ffffff;stroke-width:0.264583"
-       x="18.898811"
-       y="112.82589"
-       id="text78"><tspan
-         sodipodi:role="line"
-         id="tspan76"
-         x="18.898811"
-         y="112.82589"
-         style="fill:#121212;fill-opacity:0.95;stroke-width:0.264583">C</tspan></text>
+    <g
+       aria-label="C"
+       id="text78"
+       style="font-size:25.4px;line-height:1.25;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';fill:#ffffff;stroke-width:0.264583">
+      <path
+         d="m 26.645811,113.13069 q -2.159,0 -3.7338,-1.143 -1.5494,-1.143 -2.3876,-3.2004 -0.8128,-2.0574 -0.8128,-4.8514 0,-2.7686 0.8128,-4.826 0.8382,-2.0828 2.3876,-3.2258 1.5748,-1.143 3.7338,-1.143 2.7432,0 4.4196,1.524 1.6764,1.4986 1.9558,4.0132 h -2.3622 q -0.254,-1.4986 -1.27,-2.5146 -1.016,-1.016 -2.7432,-1.016 -2.2098,0 -3.4798,1.9304 -1.27,1.905 -1.27,5.2578 0,3.3782 1.27,5.2832 1.27,1.905 3.4798,1.905 1.8034,0 2.7686,-0.9652 0.9906,-0.9652 1.2446,-2.4892 h 2.3622 q -0.4064,2.54 -2.032,4.0132 -1.6002,1.4478 -4.3434,1.4478 z"
+         style="fill:#121212;fill-opacity:0.95;stroke-width:0.264583"
+         id="path833" />
+    </g>
   </g>
 </svg>

@@ -60,16 +60,14 @@
        x="10.61808"
        y="88.080849"
        ry="4.4065886" />
-    <text
-       xml:space="preserve"
-       style="font-size:25.4px;line-height:1.25;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';fill:#ffffff;stroke-width:0.264583"
-       x="18.898811"
-       y="112.82589"
-       id="text78"><tspan
-         sodipodi:role="line"
-         id="tspan76"
-         x="18.898811"
-         y="112.82589"
-         style="fill:#121212;fill-opacity:0.95;stroke-width:0.264583">D</tspan></text>
+    <g
+       aria-label="D"
+       id="text78"
+       style="font-size:25.4px;line-height:1.25;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';fill:#ffffff;stroke-width:0.264583">
+      <path
+         d="m 20.575211,112.82589 v -17.78 h 3.7338 q 4.3688,0 6.4516,2.3876 2.1082,2.3876 2.1082,6.5024 0,4.1148 -2.1082,6.5024 -2.0828,2.3876 -6.4516,2.3876 z m 2.1336,-1.9558 h 1.5494 q 2.3368,0 3.7338,-0.8636 1.4224,-0.8636 2.0574,-2.413 0.635,-1.5494 0.635,-3.6576 0,-2.1082 -0.635,-3.6576 -0.635,-1.5494 -2.0574,-2.413 -1.397,-0.8636 -3.7338,-0.8636 h -1.5494 z"
+         style="fill:#121212;fill-opacity:0.95;stroke-width:0.264583"
+         id="path833" />
+    </g>
   </g>
 </svg>
