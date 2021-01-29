@@ -11,6 +11,12 @@ html {
                 Oxygen, Cantarell, sans-serif;
   background: #121212;
   color: rgba(255, 255, 255, 0.50);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body{
+  max-width: 100vw;
 }
 a {
   color: inherit; /* blue colors for links too */
@@ -25,7 +31,7 @@ nav{
   background: rgba(255, 255, 255, .05);
   padding-top: 16px;
   padding-bottom: 16px;
-  width: 100%;
+  width: 100vw;
 }
 
 nav h1{
@@ -70,17 +76,17 @@ nav h1{
   width: 711px;
   height: 400px;
   -ms-zoom: 0.5;
-  -moz-transform: scale(0.6);
+  -moz-transform: scale(0.5);
   -moz-transform-origin: 0 0;
-  -o-transform: scale(0.6);
+  -o-transform: scale(0.5);
   -o-transform-origin: 0 0;
-  -webkit-transform: scale(0.6);
+  -webkit-transform: scale(0.5);
   -webkit-transform-origin: 0 0;
   border: none;
 }
 .centerLogoContainer{
-  width: calc(711px * 0.6);
-  height: calc(400px * 0.6);
+  width: calc(711px * 0.5);
+  height: calc(400px * 0.5);
   margin-left: auto;
   margin-right: auto;
   margin-top: 13%;
@@ -100,8 +106,6 @@ nav h1{
 
 .indexFooter{
   width: 100%;
-  position: absolute;
-  bottom: 10%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -112,15 +116,13 @@ article{
   margin-right: auto;
   margin-top: 32px;
   padding-top: 16px;
-  padding-left: 64px;
-  padding-right: 64px;
   background-color: rgba(255, 255, 255, 0);
   box-shadow: 5px 5px 5px rgba(255, 255, 255, 0);
-  width: 800px
+  width: 50%;
 }
 article img{
   display: block;
-  max-width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -174,7 +176,7 @@ hr{
 }
 p{
   font-size: 17pt;
-  max-width: 800px;
+  max-width: 100%;
   font-weight: 300;
   color: #f7ffffb3;
   margin-bottom: 1em;
@@ -270,5 +272,23 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
   color: #a7a7ffb3;
+
+}
+
+@media all and (max-width: 1200px) {
+  /* Mobile style */
+  article{
+    width: 80%;
+  }
+  article p{
+    text-align: justify;
+  }
+  pre{
+    white-space: pre-wrap;       /* css-3 */
+   white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+   white-space: pre-wrap;      /* Opera 4-6 */
+   white-space: -o-pre-wrap;    /* Opera 7 */
+   word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  }
 
 }
