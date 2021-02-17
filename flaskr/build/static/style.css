@@ -197,15 +197,6 @@ article a:hover{
   color: #f7ffff73;
 }
 
-.nextPageLink{
-  font-size: 17pt;
-  padding-bottom: 1em;
-}
-.previousPageLink{
-  font-size: 17pt;
-  padding-top: 1em;
-}
-
 blockquote{
   border-left-color: rgba(255, 255, 255, 0.4);
   border-left-width: 4px;

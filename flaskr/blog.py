@@ -10,7 +10,7 @@ from flaskr.db import get_db
 
 bp = Blueprint('blog', __name__)
 
-
+"""
 @bp.route('/blog')
 def blog():
     db = get_db()
@@ -20,6 +20,29 @@ def blog():
         ' ORDER BY created DESC'
     ).fetchall()
     return render_template('blog/index.html', posts=posts, mistune=mistune, highlighter=highlighter)
+"""
+
+
+@bp.route('/blog/')
+@bp.route('/blog')
+def blog_index():
+    return redirect('/blog/0')
+
+
+@bp.route('/blog/<int:offset>')
+def blog(offset):
+    db = get_db()
+    posts = db.execute(
+        'SELECT p.id, title, body, created, author_id, username'
+        ' FROM post p JOIN user u ON p.author_id = u.id'
+        ' ORDER BY created DESC LIMIT 5 OFFSET ?', (offset, )
+    ).fetchall()
+    total_posts = db.execute(
+        'SELECT COUNT(p.id)'
+        ' FROM post p JOIN user u ON p.author_id = u.id'
+    ).fetchone()
+    return render_template('blog/index.html', posts=posts, mistune=mistune, highlighter=highlighter, offset=offset,
+                           total_posts=total_posts)
 
 
 @bp.route('/<int:id>')

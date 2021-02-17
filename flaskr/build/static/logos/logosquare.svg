@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="60.835068mm"
+   height="49.256012mm"
+   viewBox="0 0 60.835068 49.256012"
+   version="1.1"
+   id="svg1556"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="logosquare.svg"
+   inkscape:export-filename="C:\Users\Luke\Documents\Projects\main-site\flaskr\static\logos\favicon.ico.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs1550" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="96.422157"
+     inkscape:cy="75.281922"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1-1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1553">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-44.88402,-58.189343)">
+    <g
+       inkscape:label="Layer 1"
+       id="layer1-1"
+       transform="translate(48.724183,-21.557041)">
+      <rect
+         style="opacity:1;fill:#121212;fill-opacity:0.94902;fill-rule:evenodd;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.95"
+         id="rect50-0-3"
+         width="31.75"
+         height="31.75"
+         x="10.61808"
+         y="88.080849"
+         ry="4.4065886" />
+      <text
+         xml:space="preserve"
+         style="font-size:25.4px;line-height:1.25;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';fill:#f5f5f5;fill-opacity:1;stroke-width:0.264583"
+         x="18.898811"
+         y="112.82589"
+         id="text78"><tspan
+           sodipodi:role="line"
+           id="tspan76"
+           x="18.898811"
+           y="112.82589"
+           style="fill:#f5f5f5;fill-opacity:1;stroke-width:0.264583">C</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:49.3531px;line-height:1.25;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';opacity:1;fill:#121212;fill-opacity:0.94902;stroke:none;stroke-width:0.0999275;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="-9.4664164"
+         y="119.78076"
+         id="text134"><tspan
+           sodipodi:role="line"
+           id="tspan132"
+           x="-9.4664164"
+           y="119.78076"
+           style="font-size:49.3531px;opacity:0.95;fill:#121212;fill-opacity:0.94902;stroke:none;stroke-width:0.0999275;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">{</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:49.537px;line-height:1.25;font-family:'DM Mono';-inkscape-font-specification:'DM Mono';fill:#121212;fill-opacity:0.94902;stroke:none;stroke-width:0.1003;stroke-miterlimit:4;stroke-dasharray:none"
+         x="32.82423"
+         y="120.05501"
+         id="text6650"
+         transform="scale(1.0016818,0.99832102)"><tspan
+           sodipodi:role="line"
+           id="tspan6648"
+           x="32.82423"
+           y="120.05501"
+           style="font-size:49.537px;opacity:1;fill:#121212;fill-opacity:0.94902;stroke:none;stroke-width:0.1003;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">}</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -6,6 +6,13 @@
 {% endblock %}
 
 {% block content %}
+    <article style="padding-top: 0; padding-bottom: 0">
+        {% if offset - 5 >= 0 %}
+            <a class="previousPageLink" href={{ url_for("blog.blog", offset=offset - 5) }}>Previous Page</a>
+        {% elif offset > 0 %}
+            <a class="previousPageLink" href={{ url_for("blog.blog", offset=0) }}>Previous Page</a>
+        {% endif %}
+    </article>
     {% for post in posts %}
         <article class="post">
             <header>
@@ -22,4 +29,9 @@
             <a href="/{{ post['id'] }}"><p>Read More</p></a>
         </article>
     {% endfor %}
+    <article>
+    {% if offset + 5 < total_posts[0] - 1 %}
+        <a class="nextPageLink" href={{ url_for("blog.blog", offset=offset + 5) }}>Next Page</a>
+    {% endif %}
+    </article>
 {% endblock %}
