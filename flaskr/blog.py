@@ -59,7 +59,7 @@ def rss():
         fe.description(mistune.markdown(post['body'], renderer=highlighter.HighlightRenderer()))
         fe.guid(str(post['id']), permalink=True)
         fe.author(name=post['username'], email="contact@lukebriggs.dev")
-        fe.pubDate(post['created'].replace(tzinfo=ZoneInfo("Europe/London")))
+        fe.pubDate(post['created'].replace(tzinfo=zoneinfo.ZoneInfo("Europe/London")))
 
     response = make_response(fg.rss_str())
     response.headers.set('Content-Type', 'application/rss+xml')
