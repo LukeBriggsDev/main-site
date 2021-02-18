@@ -8,7 +8,10 @@ from . import highlighter
 from flaskr.auth import login_required
 from flaskr.db import get_db
 from feedgen.feed import FeedGenerator
-from zoneinfo import ZoneInfo
+try:
+    import zoneinfo
+except ImportError:
+    from backports import zoneinfo
 
 bp = Blueprint('blog', __name__)
 
