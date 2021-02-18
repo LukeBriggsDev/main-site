@@ -25,8 +25,13 @@
                     <a class="action" href="{{ url_for('blog.update', id=post['id']) }}">Edit</a>
                 {% endif %}
             </header>
-            <p class="body">{{ mistune.markdown(post['body'][:600] + "...", renderer=highlighter.HighlightRenderer()) | safe}}</p>
-            <a href="/{{ post['id'] }}"><p>Read More</p></a>
+            {% if len(post['body']) > 600 %}
+                <p class="body">{{ mistune.markdown(post['body'][:600] + "...", renderer=highlighter.HighlightRenderer()) | safe}}</p>
+                <a href="/{{ post['id'] }}"><p>Read More</p></a>
+            {% else %}
+                <p class="body">{{ mistune.markdown(post['body'], renderer=highlighter.HighlightRenderer()) | safe}}</p>
+            {% endif %}
+
         </article>
     {% endfor %}
     <article>
