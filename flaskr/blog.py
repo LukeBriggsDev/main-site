@@ -1,5 +1,5 @@
-from flask import(
-    Blueprint, flash, g, redirect, render_template, request, url_for
+from flask import (
+    Blueprint, flash, g, redirect, render_template, request, url_for, make_response
 )
 from werkzeug.exceptions import abort
 
@@ -7,20 +7,10 @@ import mistune
 from . import highlighter
 from flaskr.auth import login_required
 from flaskr.db import get_db
+from feedgen.feed import FeedGenerator
+from zoneinfo import ZoneInfo
 
 bp = Blueprint('blog', __name__)
-
-"""
-@bp.route('/blog')
-def blog():
-    db = get_db()
-    posts = db.execute(
-        'SELECT p.id, title, body, created, author_id, username'
-        ' FROM post p JOIN user u ON p.author_id = u.id'
-        ' ORDER BY created DESC'
-    ).fetchall()
-    return render_template('blog/index.html', posts=posts, mistune=mistune, highlighter=highlighter)
-"""
 
 
 @bp.route('/blog/')
@@ -42,7 +32,36 @@ def blog(offset):
         ' FROM post p JOIN user u ON p.author_id = u.id'
     ).fetchone()
     return render_template('blog/index.html', posts=posts, mistune=mistune, highlighter=highlighter, offset=offset,
-                           total_posts=total_posts)
+                           total_posts=total_posts, len=len)
+
+
+@bp.route('/rss')
+def rss():
+    fg = FeedGenerator()
+    fg.title('lukebriggs.dev')
+    fg.description('All the blog posts of Luke Briggs')
+    fg.link(href='https://www.lukebriggs.dev')
+
+    db = get_db()
+    posts = db.execute(
+        'SELECT p.id, title, body, created, author_id, username'
+        ' FROM post p JOIN user u ON p.author_id = u.id'
+        ' ORDER BY created DESC'
+    ).fetchall()
+
+    for post in posts: # get_news() returns a list of articles from somewhere
+        fe = fg.add_entry()
+        fe.title(post['title'])
+        fe.link(href=f"/{post['id']}")
+        fe.description(mistune.markdown(post['body'], renderer=highlighter.HighlightRenderer()))
+        fe.guid(str(post['id']), permalink=True)
+        fe.author(name=post['username'], email="contact@lukebriggs.dev")
+        fe.pubDate(post['created'].replace(tzinfo=ZoneInfo("Europe/London")))
+
+    response = make_response(fg.rss_str())
+    response.headers.set('Content-Type', 'application/rss+xml')
+
+    return response
 
 
 @bp.route('/<int:id>')
@@ -126,7 +145,7 @@ def update(id):
                 (title, body, id)
             )
             db.commit()
-            return redirect(url_for('blog.blog'))
+            return redirect(url_for('blog.blog_index'))
 
     return render_template('blog/update.html', post=post)
 
