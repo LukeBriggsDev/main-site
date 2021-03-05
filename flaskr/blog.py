@@ -103,7 +103,7 @@ def create():
                 (title, body, g.user['id'])
             )
             db.commit()
-            return redirect(url_for('blog.blog'))
+            return redirect(url_for('blog.blog_index'))
 
     return render_template('blog/create.html')
 
