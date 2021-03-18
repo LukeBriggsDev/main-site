@@ -9,7 +9,6 @@ from flaskr.auth import login_required
 from flaskr.db import get_db
 from feedgen.feed import FeedGenerator
 import re
-from urllib.parse import urljoin, urldefrag
 try:
     import zoneinfo
 except ImportError:
