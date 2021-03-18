@@ -4,4 +4,5 @@ mistune
 pygments
 waitress
 feedgen
+feedparser
 backports.zoneinfo;python_version<"3.9"

@@ -8,10 +8,13 @@ from . import highlighter
 from flaskr.auth import login_required
 from flaskr.db import get_db
 from feedgen.feed import FeedGenerator
+import re
+from urllib.parse import urljoin, urldefrag
 try:
     import zoneinfo
 except ImportError:
     from backports import zoneinfo
+
 
 bp = Blueprint('blog', __name__)
 
@@ -56,14 +59,14 @@ def rss():
         fe = fg.add_entry()
         fe.title(post['title'])
         fe.link(href=f"/{post['id']}")
-        fe.description(mistune.markdown(post['body'], renderer=highlighter.HighlightRenderer()))
+        fe.description(re.sub(r'(src="\/static\/postimages)', "https://www.lukebriggs.dev/static/postimages",
+            mistune.markdown(post['body'], renderer=highlighter.HighlightRenderer())))
         fe.guid(str(post['id']), permalink=True)
         fe.author(name=post['username'], email="contact@lukebriggs.dev")
         fe.pubDate(post['created'].replace(tzinfo=zoneinfo.ZoneInfo("Europe/London")))
 
     response = make_response(fg.rss_str())
     response.headers.set('Content-Type', 'application/rss+xml')
-
     return response
 
 
