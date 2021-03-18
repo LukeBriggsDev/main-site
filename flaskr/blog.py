@@ -58,7 +58,7 @@ def rss():
         fe = fg.add_entry()
         fe.title(post['title'])
         fe.link(href=f"/{post['id']}")
-        fe.description(re.sub(r'(src="\/static\/postimages)', 'src="https://www.lukebriggs.dev/static/postimages',
+        fe.description(re.sub(r'(src="\/*static\/postimages)', 'src="https://www.lukebriggs.dev/static/postimages',
             mistune.markdown(post['body'], renderer=highlighter.HighlightRenderer())))
         fe.guid(str(post['id']), permalink=True)
         fe.author(name=post['username'], email="contact@lukebriggs.dev")
