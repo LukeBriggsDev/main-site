@@ -10,6 +10,10 @@ bp = Blueprint('index', __name__)
 def index():
     return render_template('index.html')
 
+@bp.route('/comparison')
+def comparison():
+    return render_template('comparison.html')
+
 @bp.route('/sitemap.xml')
 def static_from_root():
     return send_from_directory('static', 'sitemap.xml')
