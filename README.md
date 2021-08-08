@@ -1,2 +1,2 @@
 # Main Site
-My main personal website using Flask
+My main personal website using Flask (now retired)
